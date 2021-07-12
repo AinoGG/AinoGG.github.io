@@ -34,7 +34,16 @@
             <div class="header__img"></div>
             <h1 class="header__title">My skills</h1>
         </div>
-
+        <div class="header__arrow">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                <title></title>
+                <g id="icomoon-ignore">
+                </g>
+                <path
+                    d="M438.627 310.627l-160 160c-12.496 12.497-32.757 12.497-45.254 0l-160-160c-12.497-12.497-12.497-32.758 0-45.255s32.758-12.498 45.255 0l105.372 105.373v-306.745c0-17.673 14.327-32 32-32s32 14.327 32 32v306.745l105.373-105.373c6.248-6.248 14.438-9.372 22.627-9.372s16.379 3.124 22.627 9.373c12.497 12.497 12.497 32.757 0 45.254z">
+                </path>
+            </svg>
+        </div>
     </header>
 
 
@@ -191,7 +200,7 @@
                     <form action="#">
                         <div data-close class="modal__close">&times;</div>
                         <div class="modal__title">Здесь могла бы быть форма отправки</div>
-                        <input required placeholder="Введите что-нибудь"  type="text" class="modal__input">
+                        <input required placeholder="Введите что-нибудь" type="text" class="modal__input">
                         <button data-close class="btn btn_dark btn_min">Закрыть окно</button>
                     </form>
                 </div>
@@ -201,7 +210,10 @@
         <div class="calculating">
             <div class="container">
                 <div class="calculating__title h3 text__before">Калькулятор</div>
-                <span class="calculating__descr">Сначала думал какой бы калькулятор запилить, но решил не заморачиваться и запилить калькулятор с курса. Автор проделал добротную работу по поиску формул и рассчету в коде. Если теперь вам потребуется рассчитать потребность в калориях можете сделать это здесь на моем сайте. ( улыбка )</span>
+                <span class="calculating__descr">Сначала думал какой бы калькулятор запилить, но решил не заморачиваться
+                    и запилить калькулятор с курса. Автор проделал добротную работу по поиску формул и рассчету в коде.
+                    Если теперь вам потребуется рассчитать потребность в калориях можете сделать это здесь на моем
+                    сайте. ( улыбка )</span>
 
                 <h2 class="title">Рассчитаем вашу потребность в калориях?
                 </h2>
@@ -213,7 +225,7 @@
                         <div id="female" class="calculating__choose-item calculating__choose-item_active">Женщина</div>
                         <div id="male" class="calculating__choose-item">Мужчина</div>
                     </div>
-    
+
                     <div class="calculating__subtitle">
                         Индивидуальные параметры
                     </div>
@@ -222,20 +234,21 @@
                         <input type="text" id="weight" placeholder="Введите вес" class="calculating__choose-item">
                         <input type="text" id="age" placeholder="Введите возраст" class="calculating__choose-item">
                     </div>
-    
+
                     <div class="calculating__subtitle">
                         Выберите вашу физическая активность
                     </div>
                     <div class="calculating__choose calculating__choose_big">
                         <div data-ratio="1.2" id="low" class="calculating__choose-item">Низкая активность </div>
-                        <div data-ratio="1.375" id="small" class="calculating__choose-item calculating__choose-item_active">Невысокая
+                        <div data-ratio="1.375" id="small"
+                            class="calculating__choose-item calculating__choose-item_active">Невысокая
                             активность</div>
                         <div data-ratio="1.55" id="medium" class="calculating__choose-item">Умеренная активность</div>
                         <div data-ratio="1.725" id="high" class="calculating__choose-item">Высокая активность</div>
                     </div>
-    
+
                     <div class="calculating__divider"></div>
-    
+
                     <div class="calculating__total">
                         <div class="calculating__subtitle">
                             Ваша суточная норма калорий:
@@ -253,7 +266,7 @@
 
 
     <script src="../js/bundle.js"></script>
-    
+
 </body>
 
 </html>
