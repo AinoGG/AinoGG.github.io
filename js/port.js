@@ -4,8 +4,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function btnMenuSwitch(btnSelector, btnContent) {
         const menuBtn = document.querySelector(btnSelector),
-            socialBtns = document.querySelector(btnContent);
-    
+              socialBtns = document.querySelector(btnContent);
+
     
         menuBtn.addEventListener('click', () => {
             if (!socialBtns.classList.contains('show')) {
@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     
     btnMenuSwitch('.menu__btn-list', '.menu__list');
-
 
 });
 
