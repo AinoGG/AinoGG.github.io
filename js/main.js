@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
     btnMenuSwitch('.menu__btn-list', '.menu__list');
     tabs('.tabs__header-item', '.tabs__content', '.tabs__container', 'tabheader__item_active');
-    timer('.timer', '2021-07-22');
+    timer('.timer', '2022-07-22');
     calc();
     modal('[data-modal]', '.modal');
     slider({
