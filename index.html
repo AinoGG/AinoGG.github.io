@@ -44,18 +44,31 @@
                 <div></div>
             </div>
             <div class="container">
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                    let audio = document.querySelector('audio');
+                    
+                    audio.volume = 0.1;
+                    }, false);
+                </script>
+                <audio id="player" controls style="width:100%;max-width:300px;display: none;" loop>
+                    <source src="/AinoGG.github.io/audio/ZivertLYRIQ.mp3" type="audio/mp3">
+                    Тег audio не поддерживается вашим браузером.
+                </audio>
                 <ul class="menu__list">
                     <li><a class="home__page" href="index.html">домашняя</a></li>
                     <li><a href="my-skills.html">JS</a></li>
                     <li><a href="portfolio.html">сайты</a></li>
-                    <li><a href="#">обо мне</a></li>
-                    <li><a href="#">жизнь</a></li>
+                    <li onclick="document.getElementById('player').play()"><a href="#">обо мне</a></li>
+                    <li onclick="document.getElementById('player').pause()"><a href="#">Пауза</a></li>
+                    <li onclick="document.getElementById('player').volume+=0.1"><a href="#">Юля</a></li>
+                    <li onclick="document.getElementById('player').volume-=0.1"><a href="#">Прости</a></li>
                 </ul>
             </div>
 
         </div>
         <div class="container">
-            <h1 class="header__title">My name is Near</h1>
+            <h1 class="header__title">NEAR</h1>
         </div>
         <div class="header__arrow">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
