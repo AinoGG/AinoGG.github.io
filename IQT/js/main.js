@@ -170,8 +170,9 @@ function startTest() {
         appPage.classList.remove('hide');               
     }   
     if(appPage.childElementCount == 0) {
-        appPage.style.height = '0px'
-        resultPage.classList.remove('hide')
+        appPage.style.height = '0px';
+        resultPage.classList.remove('hide');
+        footerText.classList.remove('hide');
     }
     setNextQuestion();
 }
@@ -181,8 +182,8 @@ function backToMain() {
     mainPage.classList.remove('hide');
     appPage.classList.add('hide');
     resultPage.classList.add('hide');
-    clearElements()
-    resetIndex()
+    clearElements();
+    resetIndex();
     footerText.classList.add('hide');
     footerYear.classList.remove('hide');
 }
